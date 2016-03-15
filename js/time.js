@@ -9,9 +9,6 @@ exports.Alarm.prototype.getTime = function() {
 
 exports.Alarm.prototype.checkAlarm = function(hour, minute) {
   if(hour === parseInt(moment().format("h")) && minute === parseInt(moment().format("mm"))) {
-    console.log(true);
     return true;
-  } else {
-    console.log(false);
   }
 };
