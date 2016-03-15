@@ -15,7 +15,7 @@ $(document).ready(function(){
       if (myAlarm.checkAlarm(hour, minute) == true) {
         $('#alarmring').append("RIINNGGG!");
       }
-    }, 1000);
+    }, 2000);
     console.log(hour + ":" + minute);
     myAlarm.checkAlarm(hour, minute);
   });
